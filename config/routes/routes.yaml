@@ -1,0 +1,4 @@
+user_create:
+  path: '/user'
+  controller: 'App\Controller\UserController::createUser'
+  methods: ['POST']

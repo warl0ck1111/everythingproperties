@@ -1,0 +1,17 @@
+{# templates/user/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}User Information Form{% endblock %}
+
+{% block body %}
+    <h2>User Information Form</h2>
+    {{ form_start(form) }}
+    {{ form_row(form.firstName) }}
+    {{ form_row(form.lastName) }}
+    {{ form_row(form.dateOfBirth) }}
+    {{ form_row(form.age) }}
+    {{ form_row(form.imageUrl) }}
+    <button type="submit">Submit</button>
+    {{ form_end(form) }}
+{% endblock %}
